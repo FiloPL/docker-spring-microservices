@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   currency-exchange:
-    image: currency-exchange-service:0.0.1-SNAPSHOT
+    image: 3sidepl/dsm-currency-exchange-service:0.0.1-SNAPSHOT
     ports:
       - "8000:8000"
     networks:
@@ -15,7 +15,7 @@ services:
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
 
   currency-conversion:
-    image: currency-conversion-service:0.0.1-SNAPSHOT
+    image: 3sidepl/dsm-currency-conversion-service:0.0.1-SNAPSHOT
     ports:
       - "8100:8100"
     networks:
@@ -27,7 +27,7 @@ services:
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
 
   api-gateway:
-    image: api-gateway:0.0.1-SNAPSHOT
+    image: 3sidepl/dsm-api-gateway:0.0.1-SNAPSHOT
     ports:
       - "8765:8765"
     networks:
@@ -39,7 +39,7 @@ services:
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
 
   naming-server:
-    image: naming-server:0.0.1-SNAPSHOT
+    image: 3sidepl/dsm-naming-server:0.0.1-SNAPSHOT
     ports:
       - "8761:8761"
     networks:

@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   currency-exchange:
-    image: currency-exchange-service:0.0.1-SNAPSHOT
+    image: 3sidepl/dsm-currency-exchange-service:0.0.1-SNAPSHOT
     ports:
       - "8000:8000"
     networks:
